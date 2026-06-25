@@ -38,12 +38,6 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.38) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=0);
 }
-header.hover .separator_logo {
-  border-color: #0003;
-}
-header.hover .header_menu_desctop a {
-  color: #0005;
-}
 .header_menu_desctop a:hover {
   color: #754be9 !important;
 }
