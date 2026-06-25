@@ -1,4 +1,100 @@
 $(document).ready(() => {
+
+
+  $(".hamburger").click(function () {
+    $(this).toggleClass("active");
+    $(".header_menu_list").toggleClass("active");
+    $("#wide_menu_wrapper").toggleClass("active");
+  });
+
+  $(".index_number").each(function (i, item) {
+    $(item).text(i < 9 ? "0" + (i + 1) : i + 1);
+  });
+
+  // Banner slider yalnız elementlər varsa işləsin
+  if (
+    $(".contents_slider").length &&
+    $(".banner_thumbs_slider").length &&
+    $(".banner_main_slider").length
+  ) {
+    const contentsSlider = new Swiper(".contents_slider", {
+      direction: "vertical",
+      slidesPerView: 1,
+      allowTouchMove: false,
+      speed: 500,
+    });
+
+    const thumbs = new Swiper(".banner_thumbs_slider", {
+      spaceBetween: 10,
+      slidesPerView: 10,
+      freeMode: true,
+      watchSlidesProgress: true,
+      slideToClickedSlide: true,
+    });
+
+    const mainSlider = new Swiper(".banner_main_slider", {
+      spaceBetween: 0,
+      effect: "fade",
+      speed: 900,
+      fadeEffect: {
+        crossFade: true,
+      },
+      autoplay: {
+        delay: 2000,
+      },
+    });
+
+    function syncAll(index) {
+      if (mainSlider && mainSlider.initialized) {
+        mainSlider.slideTo(index);
+      }
+
+      if (contentsSlider && contentsSlider.initialized) {
+        contentsSlider.slideTo(index);
+      }
+
+      if (thumbs && thumbs.initialized) {
+        thumbs.slideTo(index);
+      }
+
+      $(".banner_thumbs_slider .swiper-slide")
+        .removeClass("swiper-slide-thumb-active")
+        .eq(index)
+        .addClass("swiper-slide-thumb-active");
+    }
+
+    syncAll(0);
+
+    thumbs.on("click", function () {
+      const index = thumbs.clickedIndex;
+
+      if (typeof index === "number" && index >= 0) {
+        syncAll(index);
+      }
+    });
+
+    mainSlider.on("slideChange", function () {
+      syncAll(mainSlider.realIndex);
+    });
+
+    contentsSlider.on("slideChange", function () {
+      syncAll(contentsSlider.realIndex);
+    });
+  }
+
+  // Content slider
+  if ($(".banner_content_slider").length) {
+    new Swiper(".banner_content_slider", {
+      slidesPerView: 2.2,
+      spaceBetween: 10,
+      speed: 900,
+      autoplay: {
+        delay: 2000,
+      },
+      loop: true,
+    });
+  }
+
   new Swiper(".heroSwiper", {
     speed: 1000,
     navigation: {
