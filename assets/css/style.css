@@ -1,22 +1,7 @@
-@font-face {
-  font-family: "Suisse-Light";
-  src: url("../fonts/SuisseIntl-Light.ttf") format("truetype");
-  font-style: normal;
-  font-display: swap;
+body {
+  background-color: #f4f5f8;
+  font-family: "Poppins", sans-serif;
 }
-@font-face {
-  font-family: "Suisse-Regular";
-  src: url("../fonts/SuisseIntl-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Suisse-Medium";
-  src: url("../fonts/SuisseIntl-Medium.otf") format("opentype");
-  font-style: normal;
-  font-display: swap;
-}
-
 .overlay_banner {
   background: #000000;
   background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.38) 100%);
@@ -51,11 +36,7 @@
 .products-swiper-pagination span.swiper-pagination-bullet-active {
   background-color: #000;
 }
-body {
-  min-height: 150vh;
-  background-color: #f4f5f8;
-  font-family: "Suisse-Regular", sans-serif;
-}
+
 .banner_slider_nav_buttons {
   left: 16px;
 }
