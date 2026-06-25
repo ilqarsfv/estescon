@@ -63,19 +63,6 @@ $(document).ready(() => {
     });
   }
 
-  // Content slider
-  if ($(".banner_content_slider").length) {
-    new Swiper(".banner_content_slider", {
-      slidesPerView: 2.2,
-      spaceBetween: 10,
-      speed: 900,
-      autoplay: {
-        delay: 2000,
-      },
-      loop: true,
-    });
-  }
-
   new Swiper(".heroSwiper", {
     speed: 1000,
     navigation: {
