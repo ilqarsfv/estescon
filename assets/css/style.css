@@ -411,7 +411,7 @@ body {
 }
 
 .hamburger {
-  border: 1px solid #fff;
+  border: 1px solid #000;
   border-radius: 50%;
   cursor: pointer;
   width: 40px;
@@ -432,7 +432,7 @@ body {
   position: absolute;
   transition: all 0.3s ease-in-out;
   width: 100%;
-  background-color: #fff;
+  background-color: #000;
 }
 .hamburger__line:first-child {
   top: 0;
@@ -462,11 +462,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   height: 36px;
   padding: 0px 20px;
   border-radius: 4px;
-  color: #fff;
 }
 .header_menu_list a:hover:not(.active) {
   color: #da6c4e;
