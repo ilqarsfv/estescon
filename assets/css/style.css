@@ -1,7 +1,18 @@
 @font-face {
-  font-family: "Montserrat";
-  src: url("../fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf") format("truetype");
-  font-weight: 400;
+  font-family: "Suisse-Light";
+  src: url("../fonts/SuisseIntl-Light.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Suisse-Regular";
+  src: url("../fonts/SuisseIntl-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Suisse-Medium";
+  src: url("../fonts/SuisseIntl-Medium.otf") format("opentype");
   font-style: normal;
   font-display: swap;
 }
@@ -27,18 +38,6 @@
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.38) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#000000", GradientType=0);
 }
-header.scrolled {
-  top: -1000px;
-}
-header.hover {
-  background-color: #fff;
-}
-header.hover * {
-  transition: all 0.3s ease-in-out;
-}
-header.hover * {
-  color: #000;
-}
 header.hover .separator_logo {
   border-color: #0003;
 }
@@ -61,7 +60,48 @@ header.hover .header_menu_desctop a {
 body {
   min-height: 150vh;
   background-color: #f4f5f8;
+  font-family: "Suisse-Regular", sans-serif;
 }
+.banner_slider_nav_buttons {
+  left: 16px;
+}
+
+@media (min-width: 576px) {
+  .banner_slider_nav_buttons {
+    left: calc((100vw - 540px) / 2 + 16px);
+  }
+}
+
+@media (min-width: 768px) {
+  .banner_slider_nav_buttons {
+    left: calc((100vw - 720px) / 2 + 16px);
+  }
+}
+
+@media (min-width: 992px) {
+  .banner_slider_nav_buttons {
+    left: calc((100vw - 960px) / 2 + 16px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner_slider_nav_buttons {
+    left: calc((100vw - 1140px) / 2 + 16px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .banner_slider_nav_buttons {
+    left: calc((100vw - 1360px) / 2 + 16px);
+  }
+}
+
+@media (min-width: 1600px) {
+  .banner_slider_nav_buttons {
+    left: calc((100vw - 1440px) / 2 + 16px);
+  }
+}
+
 
 #left_big_card {
   overflow: hidden;
@@ -330,8 +370,8 @@ body {
   z-index: 9;
 }
 .work-point-box:hover .work-point-alt {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Small tablets */

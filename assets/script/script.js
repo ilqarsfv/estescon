@@ -1,20 +1,4 @@
 $(document).ready(() => {
-  $(window).scroll(() => {
-    if ($(window).scrollTop() > 30) {
-      $("header").addClass("scrolled");
-    } else {
-      $("header").removeClass("scrolled");
-    }
-  });
-  $(".header_menu_desctop").hover(
-    () => {
-      $("header").addClass("hover");
-    },
-    () => {
-      $("header").removeClass("hover");
-    },
-  );
-
   new Swiper(".heroSwiper", {
     speed: 1000,
     navigation: {
