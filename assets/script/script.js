@@ -1,11 +1,6 @@
 $(document).ready(() => {
-
   // Banner slider yalnız elementlər varsa işləsin
-  if (
-    $(".contents_slider").length &&
-    $(".banner_thumbs_slider").length &&
-    $(".banner_main_slider").length
-  ) {
+  if ($(".contents_slider").length && $(".banner_thumbs_slider").length && $(".banner_main_slider").length) {
     const contentsSlider = new Swiper(".contents_slider", {
       direction: "vertical",
       slidesPerView: 1,
@@ -46,10 +41,7 @@ $(document).ready(() => {
         thumbs.slideTo(index);
       }
 
-      $(".banner_thumbs_slider .swiper-slide")
-        .removeClass("swiper-slide-thumb-active")
-        .eq(index)
-        .addClass("swiper-slide-thumb-active");
+      $(".banner_thumbs_slider .swiper-slide").removeClass("swiper-slide-thumb-active").eq(index).addClass("swiper-slide-thumb-active");
     }
 
     syncAll(0);
@@ -103,6 +95,20 @@ $(document).ready(() => {
       el: ".products-swiper-pagination",
       clickable: true,
     },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 0,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      1460: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+    },
   });
 
   const firstSlideImg = $("#first_slide_img");
@@ -149,22 +155,22 @@ $(document).ready(() => {
     },
   });
 
-  $(function() {
-  $(".partnor_card").on('mouseenter', function(e) {
-    x = e.pageX - $(this).offset().left;
-    y = e.pageY - $(this).offset().top;
-    $(this).find("span").css({
-      top: y,
-      left: x
+  $(function () {
+    $(".partnor_card").on("mouseenter", function (e) {
+      x = e.pageX - $(this).offset().left;
+      y = e.pageY - $(this).offset().top;
+      $(this).find("span").css({
+        top: y,
+        left: x,
+      });
+    });
+    $(".partnor_card").on("mouseout", function (e) {
+      x = e.pageX - $(this).offset().left;
+      y = e.pageY - $(this).offset().top;
+      $(this).find("span").css({
+        top: y,
+        left: x,
+      });
     });
   });
-  $(".partnor_card").on('mouseout', function(e) {
-    x = e.pageX - $(this).offset().left;
-    y = e.pageY - $(this).offset().top;
-    $(this).find("span").css({
-      top: y,
-      left: x
-    });
-  });
-});
 });
