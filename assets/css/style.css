@@ -136,7 +136,7 @@ body {
 .partnor_card {
   border-radius: 16px;
   background-color: #f5f6fa;
-  /* margin-bottom: 30px; */
+  height: 130px;
   position: relative;
   width: 100%;
   overflow: hidden;
