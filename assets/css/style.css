@@ -77,7 +77,6 @@ body {
   }
 }
 
-
 #left_big_card {
   overflow: hidden;
   position: relative;
@@ -219,19 +218,20 @@ body {
 
 /* section map */
 .section-map__text h2 {
-  font-size: 2.5rem;
-  letter-spacing: -0.01em;
-  font-weight: 300;
+  font-size: 5rem;
+  letter-spacing: 8px;
+  font-weight: 500;
   margin-bottom: 20px;
   text-align: center;
+  text-transform: uppercase;
 }
 .section-map__text p {
   color: #414141;
   margin-bottom: 20px;
   text-align: center;
-  max-width: 800px;
+  max-width: 850px;
   margin: auto;
-  font-size: 13px;
+  font-size: 15px;
 }
 .section-map__img,
 .section-map__boxes {
