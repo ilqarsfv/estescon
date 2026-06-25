@@ -1,16 +1,5 @@
 $(document).ready(() => {
 
-
-  $(".hamburger").click(function () {
-    $(this).toggleClass("active");
-    $(".header_menu_list").toggleClass("active");
-    $("#wide_menu_wrapper").toggleClass("active");
-  });
-
-  $(".index_number").each(function (i, item) {
-    $(item).text(i < 9 ? "0" + (i + 1) : i + 1);
-  });
-
   // Banner slider yalnız elementlər varsa işləsin
   if (
     $(".contents_slider").length &&

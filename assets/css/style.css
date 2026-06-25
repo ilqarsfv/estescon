@@ -391,47 +391,6 @@ body {
   }
 }
 
-.hamburger {
-  border: 1px solid #000;
-  border-radius: 50%;
-  cursor: pointer;
-  width: 40px;
-  height: 40px;
-  padding: 13px 9px;
-  position: relative;
-  z-index: 9999;
-  transition: all 0.3s ease;
-}
-.hamburger__wrapper {
-  display: block;
-  height: 100%;
-  position: relative;
-}
-.hamburger__line {
-  display: block;
-  height: 1px;
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-  width: 100%;
-  background-color: #000;
-}
-.hamburger__line:first-child {
-  top: 0;
-}
-.hamburger__line:nth-child(2) {
-  top: 50%;
-  transform: translateY(-50%);
-  transform-origin: 100% 50%;
-}
-.hamburger__line:nth-child(3) {
-  top: 100%;
-}
-.hamburger:hover .hamburger__line {
-  background-color: #da6c4e;
-}
-.hamburger:hover {
-  border-color: #da6c4e;
-}
 .header_menu_list.active {
   left: -20%;
   opacity: 0;
