@@ -72,9 +72,9 @@ $(document).ready(() => {
   });
 
   const productSwiper = new Swiper(".productSwiper", {
-    autoplay: {
-      delay: 2500,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    // },
     slidesPerView: 3,
     speed: 1000,
     spaceBetween: 20,
@@ -106,15 +106,15 @@ $(document).ready(() => {
     const prevSlide = $(swiper.slides[prevSlideIndex]);
     const prevSlideImg = prevSlide.find("img").first();
     const nextSrc = (prevSlideImg.attr("src") || "").trim();
-    const category = prevSlide.find(".pr_card_bottom span").first().text().trim();
-    const title = prevSlide.find(".pr_card_top p").eq(0).text().trim();
-    const description = prevSlide.find(".pr_card_top p").eq(1).text().trim();
+    // const category = prevSlide.find(".pr_card_bottom span").first().text().trim();
+    const title = prevSlide.find(".pr_card_bottom .prt_title").text().trim();
+    const description = prevSlide.find(".pr_card_top p").eq(0).text().trim();
 
     if (!nextSrc) {
       return;
     }
 
-    sliderContentTexts.eq(0).text(category);
+    // sliderContentTexts.eq(0).text(category);
     sliderContentTexts.eq(1).text(title);
     sliderContentTexts.eq(2).text(description);
 
