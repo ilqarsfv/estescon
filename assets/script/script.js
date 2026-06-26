@@ -2,6 +2,10 @@ $(document).ready(() => {
   // Banner slider yalnız elementlər varsa işləsin
   if ($(".contents_slider").length && $(".banner_thumbs_slider").length && $(".banner_main_slider").length) {
     const contentsSlider = new Swiper(".contents_slider", {
+      effect: "fade",
+      fadeEffect: {
+        crossFade: true,
+      },
       direction: "vertical",
       slidesPerView: 1,
       allowTouchMove: false,
@@ -10,7 +14,7 @@ $(document).ready(() => {
 
     const thumbs = new Swiper(".banner_thumbs_slider", {
       spaceBetween: 10,
-      slidesPerView: 10,
+      slidesPerView: $(".banner_main_slider .swiper-slide").length,
       freeMode: true,
       watchSlidesProgress: true,
       slideToClickedSlide: true,
