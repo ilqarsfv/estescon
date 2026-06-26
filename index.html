@@ -15,7 +15,7 @@
   <body>
     <header>
       <div class="relative z-[9999]">
-        <div class="fixed uppercase translate-x-[-50%] left-[50%] top-0 bg-[#fff] header_menu text-black rounded-[6px] mt-2 px-[30px] py-4 flex items-center gap-4 2xl:gap-12 w-[1460px] justify-between">
+        <div class="fixed uppercase translate-x-[-50%] left-[50%] top-0 bg-[#fff] header_menu text-black rounded-[6px] mt-2 px-[30px] py-4 flex items-center w-[1460px] justify-between">
           <a href="/" class="block w-fit">
             <img width="150" src="./assets/photos/logo.jpg" alt="ado aluminium logo photo" />
           </a>
@@ -51,10 +51,21 @@
               <li><a href="/elaqe/">Əlaqə</a></li>
             </ul>
           </nav>
-          <ul>
-            <li class="w-[40px] cursor-pointer h-[40px] rounded-full flex items-center justify-center text-center text-[14px] border border-black">Az</li>
-          </ul>
-          <a href="tel:+994515056800" target="_blank" class="2xl:text-[17px] font-medium">+994 (51) 505 68 00</a>
+          <div class="flex items-center gap-4">
+            <ul>
+              <li class="cursor-pointer text-center text-[14px] relative">
+                <div class="flex items-center gap-1 main_lang">
+                  <span>Az</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="15" x="0" y="0" viewBox="0 0 128 128" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><path d="M64 88a3.988 3.988 0 0 1-2.828-1.172l-40-40c-1.563-1.563-1.563-4.094 0-5.656s4.094-1.563 5.656 0L64 78.344l37.172-37.172c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656l-40 40A3.988 3.988 0 0 1 64 88z" fill="#000000" opacity="1" data-original="#000000" class=""></path></g></svg>
+                </div>
+                <ul class="lang_list hidden bg-white py-2 px-4 absolute left-[-15px] top-[105%]">
+                  <li class="border-b border-[#0003] pb-3 my-3">En</li>
+                  <li>Ru</li>
+                </ul>
+              </li>
+            </ul>
+            <a href="tel:+994515056800" target="_blank" class="2xl:text-[17px] font-medium">+994 (51) 505 68 00</a>
+          </div>
         </div>
       </div>
     </header>
@@ -123,7 +134,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">Baku Tower layihəsi 277 m hündürlüyə sahib olmaqla nəinki Azərbaycanın, hətta Qafqazın ən hündür binasıdır. MAURER şirkəti bu binanın vibrasiyalara, küləyə və zəlzələyə qarşı qorunması üçün 400 tonluq İnersiyalı Kütlə Damperi təchiz edib.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                       <div class="swiper-slide">
                         <a href="#" class="content_slider_top duration-300 ease-in-out transition-all inline-block">
@@ -135,7 +146,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">Ölkəmizdə MAURER tərəfindən zəlzələyə və küləyə qarşı qoruması təmin edilən layihələrdən biri də SOCAR Tower layihəsidir. SOCAR Tower-də 450 tonluq İnersiyalı Kütlə Damperi təchiz edildi.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                       <div class="swiper-slide">
                         <a href="#" class="content_slider_top duration-300 ease-in-out transition-all inline-block">
@@ -147,7 +158,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">Mərkəzi bankın yeni inzibati binası layihəsində xüsusi bir yer üçün MAURER seysmik qoruma sistemi tətbiq edilib. 7 ədəd sferik dayaqdan istifadə edilib.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                       <div class="swiper-slide">
                         <a href="#" class="content_slider_top duration-300 ease-in-out transition-all inline-block">
@@ -159,7 +170,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">MAURER Heydər Əliyev adına Beynəlxalq Hava Limanı layihəsi üçün 39 ədəd sferik dayaq təmin etmişdir.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                       <div class="swiper-slide">
                         <a href="#" class="content_slider_top duration-300 ease-in-out transition-all inline-block">
@@ -171,7 +182,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">Bu layihə Qarabağ İnkişaf Planının bir tərkib hissəsidir. Bu layihə üçün MAURER şirkətinin istehsalı olan genəldici bəndlər və elastomer dayaqlar təmin etmişik.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                       <div class="swiper-slide">
                         <a href="#" class="content_slider_top duration-300 ease-in-out transition-all inline-block">
@@ -183,7 +194,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">Qarabağın inkişaf planına daxil olan layihələrdən biri Bərdə-Ağdam avtomobil yolu layihəsidir. Bu layihə üçün MAURER şirkətinin istehsalı olan genəldici bəndlər və elastomer dayaqlar təmin etmişik.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                       <div class="swiper-slide">
                         <a href="#" class="content_slider_top duration-300 ease-in-out transition-all inline-block">
@@ -195,7 +206,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">Qarabağın inkişaf planına daxil olan layihələrdən biri Bərdə-Ağdam avtomobil yolu layihəsidir. Bu layihə üçün MAURER şirkətinin istehsalı olan genəldici bəndlər və elastomer dayaqlar təmin etmişik.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                       <div class="swiper-slide">
                         <a href="#" class="content_slider_top duration-300 ease-in-out transition-all inline-block">
@@ -207,7 +218,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">ESDESCON MMC olaraq Almaniyanın MAURER şirkətinin dayaq və genəldici bəndlərinin satışını edirik. Bu layihələrdən biri də Ağdam, Xocavənd və Füzuli rayonları ərazisindən keçən – Füzuli - Ağdam avtomobil yolu layihəsidir.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                       <div class="swiper-slide">
                         <a href="#" class="content_slider_top duration-300 ease-in-out transition-all inline-block">
@@ -219,7 +230,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">ESDESCON MMC olaraq Almaniyanın MAURER şirkətinin genəldici bəndlərini və elastomer dayaqlarını təmin etdiyimiz layihələrdən biri də Əhmədbəyli–Füzuli–Şuşa avtomobil yolu layihəsidir.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                       <div class="swiper-slide">
                         <a href="#" class="content_slider_top duration-300 ease-in-out transition-all inline-block">
@@ -231,7 +242,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">ESDESCON MMC olaraq ölkəmizdə Almaniyanın MAURER şirkətinin genəldici bəndlərinin və elastomer dayaqlarının satışını edirik. Bu layihələrdən biri də Şükürbəyli–Cəbrayıl–Hadrut avtomobil yolu layihəsidir.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                       <div class="swiper-slide">
                         <a href="#" class="content_slider_top duration-300 ease-in-out transition-all inline-block">
@@ -243,7 +254,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">ESDESCON MMC olaraq Almaniyanın MAURER şirkətinin istehsalı olan elastomer dayaqları və genəldici bəndləri ölkəmizdəki körpü layihələri üçün təmin edirik. Bu layihələrdən biri Muğanlı-İsmayıllı-Qəbələ avtomobil yolu layihəsidir.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                       <div class="swiper-slide">
                         <a href="#" class="content_slider_top duration-300 ease-in-out transition-all inline-block">
@@ -255,7 +266,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">ESDESCON MMC olaraq Sulutəpə dairəsi avtomobil yolunda yerləşən körpü layihəsi üçün MAURER istehsalı olan elastomer dayaqlar təmin etmişik.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                       <div class="swiper-slide">
                         <a href="#" class="content_slider_top duration-300 ease-in-out transition-all inline-block">
@@ -267,7 +278,7 @@
                           </div>
                           <p class="text-[15px] line-clamp-2">ESDESCON MMC olaraq Xırdalan dəmiryolu körpüsü layihəsi üçün MAURER istehsalı olan elastomer dayaqlar təmin etmişik.</p>
                         </a>
-                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all  duration-300 ease-in-out">Təcrübə</a>
+                        <a href="" class="inline-block border mt-4 border-white py-2 px-18 content_slide_button transition-all duration-300 ease-in-out">Təcrübə</a>
                       </div>
                     </div>
                   </div>

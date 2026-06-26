@@ -164,4 +164,14 @@ $(document).ready(() => {
       });
     });
   });
+
+  $(".main_lang").click(function(){
+    $(".lang_list").toggle(300);
+  })
+
+  $(".lang_list li").click(function(){
+    const lang = $(this).text();
+    $(".main_lang span").text(lang);
+    $(".lang_list").slideUp(300);
+  })
 });
