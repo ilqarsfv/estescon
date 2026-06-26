@@ -555,18 +555,23 @@ body {
 }
 .contents_slider {
   width: 50%;
-  height: 80px;
+  height: 150px;
   overflow: hidden;
   margin: 0px;
 }
 
 .contents_slider .swiper-slide {
-  height: 80px;
   transition: all 0.2s ease-in-out;
 }
-.contents_slider .swiper-slide:hover {
-  transform: translateX(10px);
-  color: #da6c4e;
+.content_slide_button:hover {
+  background-color: #DF2719;
+  color: #fff;
+  border-color: #DF2719;
+  margin-left: 20px;
+}
+.content_slider_top:hover {
+  color: #DF2719;
+  margin-left: 20px;
 }
 .banner_content_slider .swiper-slide a,
 .banner_content_slider .swiper-slide a button {
